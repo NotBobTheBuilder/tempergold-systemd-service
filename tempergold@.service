@@ -1,0 +1,7 @@
+[Unit]
+Description=TemperGold Socket Handler
+
+[Service]
+ExecStart=/usr/bin/env python3 -u /home/pi/tempergold-socket/tempergold-socket-handler.py %i
+StandardOutput=journal+console
+StandardError=journal+console
